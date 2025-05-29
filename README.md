@@ -2,8 +2,17 @@
 # About Nationality-IP App
 
 This app helps you with two functionalities: 
-### 1.) You can enter your name and get to know what is the probability of your name to belong to different countries in the world. (Endpoint: /getNationality?name=<John>)
-### 2.) You can enter your ip address and get to know IP Details. (Endpoint: /getIPDetails?ip=<IP_ADDRESS>)
+
+You can enter your name and get to know what is the probability of your name to belong to different countries in the world.
+Endpoint: 
+```
+/getNationality?name=<YOUR_NAME>
+```
+You can enter your ip address and get to know IP Details.
+Endpoint:
+```
+/getIPDetails?ip=<IP_ADDRESS>
+```
 
 ## Usage
 
@@ -20,11 +29,16 @@ and then deploy with:
 ```
 serverless deploy
 ```
+OR
+```
+sls deploy
+```
+
 
 After running deploy, you should see output similar to:
 
 ```
-Deploying "aws-node-express-api" to stage "dev" (us-east-1)
+Deploying "<SERVICE>" to stage "dev" (us-east-1)
 
 ✔ Service deployed to stack aws-node-express-api-dev (96s)
 
@@ -46,7 +60,7 @@ curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
 Which should result in the following response:
 
 ```json
-{ "message": "Hello from root!" }
+{ "message": "Hello Welcome to Lambda Serverless Functions. This function has two endpoints named: /getIPDetails?ip=<IP_ADDRESS> and /getNationality?name=<John>"}
 ```
 
 ### Local development
