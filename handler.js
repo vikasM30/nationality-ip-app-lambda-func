@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res, next) => {
   return res.status(200).json({
-    message: "Hello Welcome to Lambda Serverless Functions. This function has two endpoints named: /getIPDetails?ip=<IP_ADDRESS> and /getNationality?name=<John>",
+    message: "Hello Welcome to Lambda Serverless Functions. This function has two endpoints named: /getIPDetails?ip=<IP_ADDRESS> and /getNationality?name=<NAME>",
   });
 });
 

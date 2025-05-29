@@ -60,7 +60,7 @@ curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
 Which should result in the following response:
 
 ```json
-{ "message": "Hello Welcome to Lambda Serverless Functions. This function has two endpoints named: /getIPDetails?ip=<IP_ADDRESS> and /getNationality?name=<John>"}
+{ "message": "Hello Welcome to Lambda Serverless Functions. This function has two endpoints named: /getIPDetails?ip=<IP_ADDRESS> and /getNationality?name=<NAME>"}
 ```
 
 ### Local development
